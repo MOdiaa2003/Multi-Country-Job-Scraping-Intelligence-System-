@@ -76,14 +76,9 @@ The country list and search configuration can be expanded to include additional 
 
 ## System Architecture
 
-The planned architecture separates data collection, storage, enrichment, and analytics into independent stages.
+The architecture separates data collection, raw storage, LLM-based enrichment, and analytical processing into independent stages.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{ARCH_Scraping_jobs.png}
-    \caption{System Architecture of the Multi-Country Job Collection and Analytics Pipeline}
-    \label{fig:job-pipeline-architecture}
-\end{figure}
+![System Architecture](ARCH_Scraping_jobs.png)
 
 ### Architecture Components
 
