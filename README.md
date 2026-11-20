@@ -78,19 +78,12 @@ The country list and search configuration can be expanded to include additional 
 
 The planned architecture separates data collection, storage, enrichment, and analytics into independent stages.
 
-```mermaid
-flowchart TD
-    A[Job Search Configuration] --> B[Python + Playwright]
-    B --> C[Search Results Navigation]
-    C --> D[Job Listing Extraction]
-    D --> E[URL-Based Deduplication]
-    E --> F[Incremental JSON Checkpoint]
-    F --> G[MongoDB - Planned]
-    G --> H[Qwen Local LLM - Planned]
-    H --> I[Structured Job Data]
-    I --> J[PostgreSQL - Planned]
-    J --> K[SQL Analysis - Planned]
-```
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{ARCH_Scraping_jobs.png}
+    \caption{System Architecture of the Multi-Country Job Collection and Analytics Pipeline}
+    \label{fig:job-pipeline-architecture}
+\end{figure}
 
 ### Architecture Components
 
